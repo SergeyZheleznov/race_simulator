@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <windows.h>
 
 class Vehicles {
@@ -12,7 +12,7 @@ public:
 	{
 		speed = 0;
 		race_time = 0;
-		name = "Транспортное средство";
+		name = "РўСЂР°РЅСЃРїРѕСЂС‚РЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ";
 	}
 
 	Vehicles (int speed, std::string name)
@@ -53,7 +53,7 @@ public:
 	int k;
 	int k_plus;
 	Air_vehicles() {
-		name = "Воздушное транспортное средство";
+		name = "Р’РѕР·РґСѓС€РЅРѕРµ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ";
 		speed = 0;
 		k = 0;
 		k_plus = 0;
@@ -68,7 +68,7 @@ public:
 
 	Ground_vehicles()
 	{	
-		name = "Наземное транспортное средство";
+		name = "РќР°Р·РµРјРЅРѕРµ С‚СЂР°РЅСЃРїРѕСЂС‚РЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ";
 		speed = 0;
 		time_to_rest = 0;
 		rest_time = 0; 
@@ -96,7 +96,7 @@ class Camel : public Ground_vehicles
 public:
 	Camel()
 	{
-		name = "Верблюд";
+		name = "Р’РµСЂР±Р»СЋРґ";
 		speed = 10;
 		time_to_rest = 30;
 		rest_time = 5;
@@ -114,7 +114,7 @@ public:
 
 	Quick_Camel()
 	{
-		name = "Верблюд-быстроход";
+		name = "Р’РµСЂР±Р»СЋРґ-Р±С‹СЃС‚СЂРѕС…РѕРґ";
 		speed = 40;
 		time_to_rest = 10;
 		rest_time = 5;
@@ -133,7 +133,7 @@ class Centaur: public Ground_vehicles
 public:
 	Centaur()
 	{
-		name = "Кентавр";
+		name = "РљРµРЅС‚Р°РІСЂ";
 		speed = 15;
 		time_to_rest = 8;
 		rest_time = 2;
@@ -150,7 +150,7 @@ class All_boots : public Ground_vehicles
 public:
 	All_boots()
 	{
-		name = "Ботинки-вездеходы";
+		name = "Р‘РѕС‚РёРЅРєРё-РІРµР·РґРµС…РѕРґС‹";
 		speed = 6;
 		time_to_rest = 60;
 		rest_time = 10;
@@ -167,7 +167,7 @@ class Magic_carpet : public Air_vehicles
 public:
 	Magic_carpet()
 	{
-		name = "Ковёр-самолёт";
+		name = "РљРѕРІС‘СЂ-СЃР°РјРѕР»С‘С‚";
 		speed = 10;
 		k = 30;
 	}
@@ -184,7 +184,7 @@ public:
 	
 	Eagle()
 	{
-		name = "Орёл";
+		name = "РћСЂС‘Р»";
 		speed = 8;
 		k = 3;
 	}
@@ -201,7 +201,7 @@ class Broom : public Air_vehicles
 public:
 	Broom()
 	{
-		name = "Метла";
+		name = "РњРµС‚Р»Р°";
 		speed = 20;
 		k_plus = 1;
 	}
@@ -219,59 +219,59 @@ int main()
 	SetConsoleCP(1251);
 	std::system("chcp 1251");
 
-		std::cout << "Добро пожавать с гоночный симулятор!" << std::endl;
-		std::cout << "1. Гонка для наземного транспорта" << std::endl;
-		std::cout << "2. Гонка для воздушного транспорта" << std::endl;
-		std::cout << "3. Гонка для наземного и воздушного транспорта" << std::endl;
-		std::cout << "Выберите вид гонки: ";
+		std::cout << "Р”РѕР±СЂРѕ РїРѕР¶Р°РІР°С‚СЊ СЃ РіРѕРЅРѕС‡РЅС‹Р№ СЃРёРјСѓР»СЏС‚РѕСЂ!" << std::endl;
+		std::cout << "1. Р“РѕРЅРєР° РґР»СЏ РЅР°Р·РµРјРЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°" << std::endl;
+		std::cout << "2. Р“РѕРЅРєР° РґР»СЏ РІРѕР·РґСѓС€РЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°" << std::endl;
+		std::cout << "3. Р“РѕРЅРєР° РґР»СЏ РЅР°Р·РµРјРЅРѕРіРѕ Рё РІРѕР·РґСѓС€РЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°" << std::endl;
+		std::cout << "Р’С‹Р±РµСЂРёС‚Рµ РІРёРґ РіРѕРЅРєРё: ";
 
 		int type_number;
 		std::string type;
 		std::cin >> type_number;
 		std::cout << std::endl;
 		if (type_number == 1) {
-			type = "Гонка для наземного транспорта. ";
+			type = "Р“РѕРЅРєР° РґР»СЏ РЅР°Р·РµРјРЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°. ";
 		}
 		else if (type_number == 2) {
-			type = "Гонка для воздушного транспорта. ";
+			type = "Р“РѕРЅРєР° РґР»СЏ РІРѕР·РґСѓС€РЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°. ";
 		}
 		else if (type_number == 3) {
-			type = "Гонка для наземного и воздушного транспорта. ";
+			type = "Р“РѕРЅРєР° РґР»СЏ РЅР°Р·РµРјРЅРѕРіРѕ Рё РІРѕР·РґСѓС€РЅРѕРіРѕ С‚СЂР°РЅСЃРїРѕСЂС‚Р°. ";
 		}
 		else {
-			std::cout << "Укажите число от 1 до 3 в зависимости от выбранного типа гонки: " << std::endl;
+			std::cout << "РЈРєР°Р¶РёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 3 РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РІС‹Р±СЂР°РЅРЅРѕРіРѕ С‚РёРїР° РіРѕРЅРєРё: " << std::endl;
 		};
 
-		std::cout << "Укажите длину дистанции (должна быть положительной): ";
+		std::cout << "РЈРєР°Р¶РёС‚Рµ РґР»РёРЅСѓ РґРёСЃС‚Р°РЅС†РёРё (РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕР№): ";
 
 		int distance;
 		std::cin >> distance;
 		std::cout << std::endl;
 
-		std::cout << "Должно быть зарегистрировано хотя бы два транспортных средства" << std::endl;
-		std::cout << "1. Зарегистрировать транспорт" << std::endl;
-		std::cout << "Выберите действие: ";
+		std::cout << "Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРѕ С…РѕС‚СЏ Р±С‹ РґРІР° С‚СЂР°РЅСЃРїРѕСЂС‚РЅС‹С… СЃСЂРµРґСЃС‚РІР°" << std::endl;
+		std::cout << "1. Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚" << std::endl;
+		std::cout << "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ: ";
 
 	int reg;
 
 	std::cin >> reg;
 	std::cout << std::endl;
 
-	std::cout << type << "Расстояние: " << distance << std::endl;
+	std::cout << type << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ: " << distance << std::endl;
 
-	std::cout << "1. Ботинки-вездеходы" << std::endl;
-	std::cout << "2. Метла" << std::endl;
-	std::cout << "3. Верблюд" << std::endl;
-	std::cout << "4. Кентавр" << std::endl;
-	std::cout << "5. Орёл" << std::endl;
-	std::cout << "6. Верблюд-быстроход" << std::endl;
-	std::cout << "7. Ковёр-самолёт" << std::endl;
-	std::cout << "0. Закончить регистрацию" << std::endl;
-	std::cout << "Выберите транспорт или ноль для окончания процесса регистрации: " << std::endl;
+	std::cout << "1. Р‘РѕС‚РёРЅРєРё-РІРµР·РґРµС…РѕРґС‹" << std::endl;
+	std::cout << "2. РњРµС‚Р»Р°" << std::endl;
+	std::cout << "3. Р’РµСЂР±Р»СЋРґ" << std::endl;
+	std::cout << "4. РљРµРЅС‚Р°РІСЂ" << std::endl;
+	std::cout << "5. РћСЂС‘Р»" << std::endl;
+	std::cout << "6. Р’РµСЂР±Р»СЋРґ-Р±С‹СЃС‚СЂРѕС…РѕРґ" << std::endl;
+	std::cout << "7. РљРѕРІС‘СЂ-СЃР°РјРѕР»С‘С‚" << std::endl;
+	std::cout << "0. Р—Р°РєРѕРЅС‡РёС‚СЊ СЂРµРіРёСЃС‚СЂР°С†РёСЋ" << std::endl;
+	std::cout << "Р’С‹Р±РµСЂРёС‚Рµ С‚СЂР°РЅСЃРїРѕСЂС‚ РёР»Рё РЅРѕР»СЊ РґР»СЏ РѕРєРѕРЅС‡Р°РЅРёСЏ РїСЂРѕС†РµСЃСЃР° СЂРµРіРёСЃС‚СЂР°С†РёРё: " << std::endl;
 
 	int veh;
 	std::string veh_name;
-	Vehicles** array_veh = new Vehicles * [20];
+	Vehicles** array_veh = new Vehicles* [20];
 	std::string* array_veh_names = new std::string[20];
 	int i = 0;
 	int j = 0;
@@ -282,111 +282,98 @@ int main()
 		std::cout << std::endl;
 		if (veh == 0) {
 			veh_name = " ";
+			i = i - 1;
 		}
 		if (veh == 1) {
-			veh_name = "Ботинки-вездеходы";
+			veh_name = "Р‘РѕС‚РёРЅРєРё-РІРµР·РґРµС…РѕРґС‹";
 			array_veh_names[i] = veh_name;
-			All_boots all_boots;
-			Vehicles* par_all_boots = &all_boots;
-			array_veh[i] = par_all_boots;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрированы." << std::endl;
+			array_veh[i] = new All_boots;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅС‹." << std::endl;
 		}
 		if (veh == 2) {
-			veh_name = "Метла";
+			veh_name = "РњРµС‚Р»Р°";
 			array_veh_names[i] = veh_name;
-			Broom broom;
-			Vehicles* par_broom = &broom;
-			array_veh[i] = par_broom;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрированa." << std::endl;
+			array_veh[i] = new Broom;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅa." << std::endl;
 		}
 		if (veh == 3) {
-			veh_name = "Верблюд";
+			veh_name = "Р’РµСЂР±Р»СЋРґ";
 			array_veh_names[i] = veh_name;
-			Camel camel;
-			Vehicles* par_camel = &camel;
-			array_veh[i] = par_camel;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрирован." << std::endl;
+			array_veh[i] = new Camel;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ." << std::endl;
 		}
 		if (veh == 4) {
-			veh_name = "Кентавр";
+			veh_name = "РљРµРЅС‚Р°РІСЂ";
 			array_veh_names[i] = veh_name;
-			Centaur centaur;
-			Vehicles* par_centaur = &centaur;
-			array_veh[i] = par_centaur;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрирован." << std::endl;
+			array_veh[i] = new Centaur;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ." << std::endl;
 		}
 		if (veh == 5) {
-			veh_name = "Орёл";
+			veh_name = "РћСЂС‘Р»";
 			array_veh_names[i] = veh_name;
-			Eagle eagle;
-			Vehicles* par_eagle = &eagle;
-			array_veh[i] = par_eagle;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрирован." << std::endl;
+			array_veh[i] = new Eagle;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ." << std::endl;
 		}
 		if (veh == 6) {
-			veh_name = "Верблюд-быстроход";
+			veh_name = "Р’РµСЂР±Р»СЋРґ-Р±С‹СЃС‚СЂРѕС…РѕРґ";
 			array_veh_names[i] = veh_name;
-			Quick_Camel quick_camel;
-			Vehicles* par_quick_camel = &quick_camel;
-			array_veh[i] = par_quick_camel;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрирован." << std::endl;
+			array_veh[i] = new Quick_Camel;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ." << std::endl;
 		}
 		if (veh == 7) {
-			veh_name = "Ковёр-самолёт";
+			veh_name = "РљРѕРІС‘СЂ-СЃР°РјРѕР»С‘С‚";
 			array_veh_names[i] = veh_name;
-			Magic_carpet magic_carpet;
-			Vehicles* par_magic_carpet = &magic_carpet;
-			array_veh[i] = par_magic_carpet;
-			std::cout << array_veh[i]->Get_name() << " успешно зарегистрирован." << std::endl;
+			array_veh[i] = new Magic_carpet;
+			std::cout << array_veh[i]->Get_name() << " СѓСЃРїРµС€РЅРѕ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ." << std::endl;
 		}
-		std::cout << type << "Расстояние: " << distance << std::endl;
-		std::cout << "Зарегистрированные транспортные средства: ";
+		std::cout << type << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ: " << distance << std::endl;
+		std::cout << "Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рµ С‚СЂР°РЅСЃРїРѕСЂС‚РЅС‹Рµ СЃСЂРµРґСЃС‚РІР°: ";
 		j = i;
 		for (int j = 0; j <= i; j = j++)
 		{
-			std::cout << array_veh_names[j] << " ";
+			std::cout << array_veh[j]->Get_name() << " ";
 		}
 		i = i + 1;
 		std::cout << std::endl;
-		std::cout << "1. Ботинки-вездеходы" << std::endl;
-		std::cout << "2. Метла" << std::endl;
-		std::cout << "3. Верблюд" << std::endl;
-		std::cout << "4. Кентавр" << std::endl;
-		std::cout << "5. Орёл" << std::endl;
-		std::cout << "6. Верблюд-быстроход" << std::endl;
-		std::cout << "7. Ковёр-самолёт" << std::endl;
-		std::cout << "0. Закончить регистрацию" << std::endl;
-		std::cout << "Выберите транспорт или ноль для окончания процесса регистрации: " << std::endl;
+		std::cout << "1. Р‘РѕС‚РёРЅРєРё-РІРµР·РґРµС…РѕРґС‹" << std::endl;
+		std::cout << "2. РњРµС‚Р»Р°" << std::endl;
+		std::cout << "3. Р’РµСЂР±Р»СЋРґ" << std::endl;
+		std::cout << "4. РљРµРЅС‚Р°РІСЂ" << std::endl;
+		std::cout << "5. РћСЂС‘Р»" << std::endl;
+		std::cout << "6. Р’РµСЂР±Р»СЋРґ-Р±С‹СЃС‚СЂРѕС…РѕРґ" << std::endl;
+		std::cout << "7. РљРѕРІС‘СЂ-СЃР°РјРѕР»С‘С‚" << std::endl;
+		std::cout << "0. Р—Р°РєРѕРЅС‡РёС‚СЊ СЂРµРіРёСЃС‚СЂР°С†РёСЋ" << std::endl;
+		std::cout << "Р’С‹Р±РµСЂРёС‚Рµ С‚СЂР°РЅСЃРїРѕСЂС‚ РёР»Рё РЅРѕР»СЊ РґР»СЏ РѕРєРѕРЅС‡Р°РЅРёСЏ РїСЂРѕС†РµСЃСЃР° СЂРµРіРёСЃС‚СЂР°С†РёРё: " << std::endl;
 
 	} while (veh != 0);
 
-		std::cout << "регистрация участников закончена!" << std::endl;
+		std::cout << "СЂРµРіРёСЃС‚СЂР°С†РёСЏ СѓС‡Р°СЃС‚РЅРёРєРѕРІ Р·Р°РєРѕРЅС‡РµРЅР°!" << std::endl;
 		std::cout << std::endl;
-		std::cout << "Число допущенных к гонке: " << j << std::endl;
+		std::cout << "Р§РёСЃР»Рѕ РґРѕРїСѓС‰РµРЅРЅС‹С… Рє РіРѕРЅРєРµ: " << j + 1 << std::endl;
 		std::cout << std::endl;
-		std::cout << "Список участников." << std::endl;
-		for (int i = 0; i < j; i = i++)
+		std::cout << "РЎРїРёСЃРѕРє СѓС‡Р°СЃС‚РЅРёРєРѕРІ." << std::endl;
+		for (int i = 0; i <= j; i++)
 		{
-			std::cout << array_veh_names[i] << " ";
+			std::cout << array_veh[i]->Get_name() << " ";
 		}
 		std::cout << std::endl;
 		std::cout << std::endl;
 
-		std::cout << "1. Зарегистрировать транспорт" << std::endl;
-		std::cout << "2. Начать гонку" << std::endl;
-		std::cout << "Выберите действие: ";
+		std::cout << "1. Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ С‚СЂР°РЅСЃРїРѕСЂС‚" << std::endl;
+		std::cout << "2. РќР°С‡Р°С‚СЊ РіРѕРЅРєСѓ" << std::endl;
+		std::cout << "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ: ";
 		std::cin >> reg;
 		std::cout << std::endl;
 
+
+		std::cout << "Р Р°СЃС‡С‘С‚ РІСЂРµРјРµРЅРё РїСЂРѕС…РѕР¶РґРµРЅРёСЏ РіРѕРЅРєРё РєР°Р¶РґС‹Рј СѓС‡Р°СЃС‚РЅРёРєРѕРј (С‚РµС…РЅРёС‡РµСЃРєРёРµ РґРµР№СЃС‚РІРёСЏ)" << std::endl;
 		float time;
-		for (int i = 0; i < j; i = i++)
+		for (int i = 0; i <= j; i = i++)
 		{
 			time = (float)distance / (float)array_veh[i]->Get_speed();
 			array_veh[i]->Set_race_time(time);
-			std::cout << array_veh_names[i];
-			// в предыдущей строке не работает метод array_ver[i]->Get_name(). Смотрел значение переменной name, там пусто, 
-			//не понимаю, почему там пусто, должно быть имя данного участника гонки. В результате вывожу имя и массива имён. Это костыль.
-			std::cout << " Время в гонке " << array_veh[i]->Get_race_time() << std::endl;
+			std::cout << array_veh[i]->Get_name();
+			std::cout << " Р’СЂРµРјСЏ РІ РіРѕРЅРєРµ " << array_veh[i]->Get_race_time() << std::endl;
 		}
 
 		int size = j;
@@ -394,7 +381,7 @@ int main()
 		do
 		{
 			swapped = false;
-			for (int i = 1; i < size; i++)
+			for (int i = 1; i <= size; i++)
 			{
 				if ((float)array_veh[i - 1]->Get_race_time() > (float)array_veh[i]->Get_race_time())
 				{
@@ -408,15 +395,16 @@ int main()
 
 
 
-		// вывод на печать результатов гонки от первого (у него самое маленькое время) к последнему (у него максимальное время)
+		// РІС‹РІРѕРґ РЅР° РїРµС‡Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РіРѕРЅРєРё РѕС‚ РїРµСЂРІРѕРіРѕ (Сѓ РЅРµРіРѕ СЃР°РјРѕРµ РјР°Р»РµРЅСЊРєРѕРµ РІСЂРµРјСЏ) Рє РїРѕСЃР»РµРґРЅРµРјСѓ (Сѓ РЅРµРіРѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІСЂРµРјСЏ)
+		std::cout << std::endl;
+		std::cout << "Р РµР·СѓР»СЊС‚Р°С‚С‹ РіРѕРЅРєРё." << std::endl;
+
+
 		std::string temp_name;
-		for (int i = 0; i < j; i = i++)
+		for (int i = 0; i <= j; i = i++)
 		{
-			
-			std::cout << array_veh[i]->Get_name();
-			// в предыдущей строке не работает метод array_ver[i]->Get_name(). Смотрел значение переменной name, там пусто, 
-			//не понимаю, почему там пусто, должно быть имя данного участника гонки. В результате вывожу имя и массива имён. Это костыль.
-			std::cout << " Время в гонке " << array_veh[i]->Get_race_time() << std::endl;
+			std::cout << i + 1 << ". " << array_veh[i]->Get_name();
+			std::cout << " Р’СЂРµРјСЏ РІ РіРѕРЅРєРµ " << array_veh[i]->Get_race_time() << std::endl;
 		}
 
 
